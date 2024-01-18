@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 20px 0px;
+  width: 100%;
+  transform: translateX(0%);
+  animation: move 4s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes pause {
+  0%,
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.container {
+  display: flex;
+  gap: 1.5em;
+  overflow: hidden;
+  background-color: rgb(40, 40, 255);
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.section {
+  h1 {
+    font-size: 320px;
+    position: relative;
+    color: black;
+    letter-spacing: -23px;
+    font-weight: 610;
+  }
+  p {
+    color: black;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 1.6;
+    letter-spacing: -0.54px;
+    max-width: 440px;
+    margin-left: 3em;
+    margin-bottom: 4em;
+  }
+}
+
+//MAIN
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+
+.text-area {
+  //text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  h1 {
+    font-size: 85px;
+    letter-spacing: -7px;
+    font-weight: 600;
+    margin-right: .3em;
+    margin-bottom: .2em;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: -0.54px;
+    max-width: 440px;
+    //position: absolute;
+    //right: 0;
+  }
+}
+.flex-contain {
+    display: flex;
+    gap: 2em;
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin-left: 3em;
+
+        button {
+            max-width: 500px;
+            height: 70px;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .btn-one {
+            background-color: burlywood;
+        }
+        .btn-two {
+            background-color: aqua;
+        }
+        .btn-three {
+            background-color: blueviolet;
+        }
+        .btn-four {
+            background-color: darkgreen;
+        }
+        .btn-five {
+            background-color: darkgray;
+        }
+    }
+
+    .cards{
+        max-width: 600px;
+    }
+  }
+}
