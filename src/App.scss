@@ -49,7 +49,7 @@ a {
     font-size: 320px;
     position: relative;
     color: black;
-    letter-spacing: -23px;
+    letter-spacing: -26px;
     font-weight: 610;
   }
   p {
@@ -67,70 +67,152 @@ a {
 //MAIN
 .main-container {
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   background-color: black;
   color: white;
 
-.text-area {
-  //text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  h1 {
-    font-size: 85px;
-    letter-spacing: -7px;
-    font-weight: 600;
-    margin-right: .3em;
-    margin-bottom: .2em;
-  }
-  p {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: -0.54px;
-    max-width: 440px;
-    //position: absolute;
-    //right: 0;
-  }
-}
-.flex-contain {
+  .text-area {
+    //text-align: right;
     display: flex;
-    gap: 2em;
+    flex-direction: column;
+    align-items: flex-end;
 
-    .btns {
-        display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        margin-left: 3em;
+    h1 {
+      font-size: 85px;
+      letter-spacing: -7px;
+      font-weight: 600;
+      margin-right: 0.3em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.6;
+      letter-spacing: -0.54px;
+      max-width: 440px;
+      //position: absolute;
+      //right: 0;
+    }
+  }
+  .service-contain {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    position: relative;
 
-        button {
-            max-width: 500px;
-            height: 70px;
-            border: none;
-            font-size: 30px;
-            cursor: pointer;
-        }
-
-        .btn-one {
-            background-color: burlywood;
-        }
-        .btn-two {
-            background-color: aqua;
-        }
-        .btn-three {
-            background-color: blueviolet;
-        }
-        .btn-four {
-            background-color: darkgreen;
-        }
-        .btn-five {
-            background-color: darkgray;
-        }
+    button {
+      max-width: 500px;
+      min-height: 80px;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      font-size: 56px;
+      font-weight: 400;
+      letter-spacing: -1.68px;
+      padding: 16px 40px;
     }
 
-    .cards{
-        max-width: 600px;
+    .btn-one {
+      background-color: burlywood;
     }
+    .btn-two {
+      background-color: aqua;
+    }
+    .btn-three {
+      background-color: blueviolet;
+    }
+    .btn-four {
+      background-color: darkgreen;
+    }
+    .btn-five {
+      background-color: darkgray;
+    }
+  }
+
+  .card-desOne {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 250px 15px;
+    border-bottom-left-radius: 20px 115px;
+    border-bottom-right-radius: 105px 15px;
+    background-color: burlywood;
+    //transform: rotate(-14.42deg);
+    z-index: 1;
+    h1,
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: -0.15px;
+      max-width: 400px;
+      //transform: rotate(6.42deg);
+    }
+  }
+  .card-desTwo {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-top-left-radius: 250px 15px;
+    border-bottom-left-radius: 20px 115px;
+    border-bottom-right-radius: 105px 15px;
+    background-color: aqua;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .card-desThree {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-top-left-radius: 250px 15px;
+    border-bottom-left-radius: 20px 115px;
+    border-bottom-right-radius: 105px 15px;
+    background-color: blueviolet;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .card-desFour {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-top-left-radius: 250px 15px;
+    border-bottom-left-radius: 20px 115px;
+    border-bottom-right-radius: 105px 15px;
+    background-color: darkgreen;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .card-desFive {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-top-left-radius: 250px 15px;
+    border-bottom-left-radius: 20px 115px;
+    border-bottom-right-radius: 105px 15px;
+    background-color: darkgray;
+    top: 50%;
+    transform: translate(0, -50%);
   }
 }
