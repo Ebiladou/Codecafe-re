@@ -1,14 +1,17 @@
-import Header from "./components/Header"
-import Main from "./components/Main"
-import Section from "./components/Section"
+import Layout from "./components/Layout"
+import { Routes, Route } from "react-router-dom";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 function App() {
 
   return (
     <>
-    <Header/>
-    <Section/>
-    <Main/>
+    <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/privacy" element={<Privacy/>} />
+        <Route path="/terms" element={<Terms/>}/>
+      </Routes>
     </>
   )
 }
