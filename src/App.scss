@@ -12,10 +12,6 @@
   width: 100%;
   transform: translateX(0%);
   animation: move 4s linear infinite;
-
-  &:hover {
-    animation-play-state: paused;
-  }
 }
 @keyframes move {
   0% {
@@ -38,6 +34,11 @@
   overflow: hidden;
   background-color: rgb(40, 40, 255);
   color: white;
+  &:hover {
+    .flex-container {
+      animation-play-state: paused;
+    }
+  }
 }
 
 a {

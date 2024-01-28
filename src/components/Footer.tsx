@@ -18,10 +18,10 @@ function Footer() {
         <div className="links">
           <ul>
             <li>Home</li>
-            <Link to="privacy" style={{ textDecoration: 'none', color: 'black'}}>
+            <Link to="/privacy" style={{ textDecoration: 'none', color: 'black'}}>
               <li>Privacy Policy</li>
             </Link>
-            <Link to="terms" style={{ textDecoration: 'none', color: 'black'}}>
+            <Link to="/terms" style={{ textDecoration: 'none', color: 'black'}}>
             <li>Terms & conditions</li>
             </Link>
           </ul>
