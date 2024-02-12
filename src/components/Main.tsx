@@ -1,14 +1,19 @@
 import Slide from "./Slide";
+import "../Main.scss";
 
 function Main() {
   return (
     <div className="main-container">
       <div className="text-area">
         <h1>craft your digital beauty</h1>
-        <p>
+        <p className="mobile-text">
           With a client-centric approach, innovation, and reliable support, we
           are dedicated to empowering digital dreams with expertise and
           creativity.
+        </p>
+        <p className="desktop-text">
+          Focused on you, fueled by creativity. Transforming digital dreams into
+          vivid relaities with our expertise and innovation.
         </p>
       </div>
 
@@ -18,7 +23,6 @@ function Main() {
             <button className="btn-one">Product Design</button>
           </Slide>
           <div className="card-desOne">
-            <h1>Product Design</h1>
             <p>
               With a client-centric approach, our team of experts is ready to
               deliver pixel-perfect designs for your use cases.
@@ -32,7 +36,6 @@ function Main() {
           </Slide>
 
           <div className="card-desTwo">
-            <h1>Technical Writing</h1>
             <p>
               Work with our team of technical writing experts to attend to your
               technical writing needs; planning, content strategy, and
@@ -47,7 +50,6 @@ function Main() {
           </Slide>
 
           <div className="card-desThree">
-            <h1>Websites/Landing Pages</h1>
             <p>
               Upgrade your brand by working with our expert-led team to build
               your websites and landing pages.
@@ -61,7 +63,6 @@ function Main() {
           </Slide>
 
           <div className="card-desFour">
-            <h1>E-commerce Stores</h1>
             <p>
               Upgrade your brand by working with our expert-led team to build
               your websites and landing pages.
@@ -75,7 +76,6 @@ function Main() {
           </Slide>
 
           <div className="card-desFive">
-            <h1>Software Consultancy</h1>
             <p>
               Engage our team of experts to discuss general software needs not
               limited to software evaluation and assessment, technical content
@@ -83,6 +83,50 @@ function Main() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="cards">
+        <div className="card-desOne">
+          <h3>Product design</h3>
+          <p>
+            With a client-centric approach, our team of experts is ready to
+            deliver pixel-perfect designs for your use cases.
+          </p>
+        </div>
+
+        <div className="card-desTwo">
+          <h3>Technical Writing</h3>
+            <p>
+              Work with our team of technical writing experts to attend to your
+              technical writing needs; planning, content strategy, and
+              improvement of existing technical documents.
+            </p>
+          </div>
+
+          <div className="card-desThree">
+            <h3>Websites/Landing Pages</h3>
+            <p>
+              Upgrade your brand by working with our expert-led team to build
+              your websites and landing pages.
+            </p>
+          </div>
+
+          <div className="card-desFour">
+            <h3>E-commerce Stores</h3>
+            <p>
+              Upgrade your brand by working with our expert-led team to build
+              your websites and landing pages.
+            </p>
+          </div>
+
+          <div className="card-desFive">
+            <h3>Software Consultancy</h3>
+            <p>
+              Engage our team of experts to discuss general software needs not
+              limited to software evaluation and assessment, technical content
+              auditing, and general software contracts.
+            </p>
+          </div>
       </div>
     </div>
   );

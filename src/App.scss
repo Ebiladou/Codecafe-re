@@ -93,55 +93,29 @@ a {
   }
 }
 
-//MAIN
-.main-container {
-  width: 100%;
-  padding: 80px 20px;
-  //height: 1000px;
-  background-color: black;
-  color: white;
-
-  .text-area {
-    //text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    h1 {
-      font-size: 85px;
-      letter-spacing: -7px;
-      font-weight: 600;
-      margin-right: 0.3em;
-      margin-bottom: 0.2em;
-    }
-    p {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.6;
-      letter-spacing: -0.54px;
-      max-width: 440px;
-      //position: absolute;
-      //right: 0;
-    }
-  }
+/*//MAIN
   .service-contain {
     display: flex;
     flex-direction: column;
     margin-top: 4em;
     margin-left: 4em;
     position: relative;
+    width: 100%;
 
-    button {
+    .service-cardOne {
+      width: 100%;
+
+    .btn-one {
+      width: 100%;
+      background-color: #cb744e;
       border: none;
       cursor: pointer;
       font-size: 56px;
       letter-spacing: -1.68px;
       padding: 16px 40px;
     }
+  }
 
-    .btn-one {
-      background-color: #cb744e;
-    }
     .btn-two {
       background-color: #99ffc2;
     }
@@ -157,28 +131,36 @@ a {
   }
 
   @media screen and (max-width: 768px) {
-      .text-area {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        h1 {
-          font-size: 52px;
-          font-weight: 600;
-          line-height: 46px;
-          letter-spacing: -2.9px;
-          padding-right: 2px;
-        }
-      p {
-        font-size: 16px;
-        line-height: 1.8;
-        letter-spacing: -0.48px;
+    .text-area {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      h1 {
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 46px;
+        letter-spacing: -2.9px;
+        padding-right: 2px;
       }
     }
+    .desktop-text {
+      display: none;
+    }
+    .mobile-text {
+      display: block;
+      font-size: 15px;
+      line-height: 1.8;
+      letter-spacing: -0.48px;
+      text-align: right;
+      max-width: 440px;
+      color:white;
+    }
   }
+}
 
-  /**/
+*/
 
-  /*
+/*
    max-width: 100%;
     height: 100%;
     position: absolute;
@@ -198,113 +180,89 @@ a {
     z-index: 1;
   */
 
-  .card-desOne {
-    max-width: 100%;
-    padding: 20px 30px;
-    border: 1px solid grey;
-    background-color: white;
-    color: black;
-    h1,
-    p {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: -0.15px;
-      max-width: 400px;
-    }
+/*.card-desOne {
+  max-width: 100%;
+  padding: 20px 30px;
+  border: 1px solid grey;
+  background-color: white;
+  color: black;
+  h1,
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.15px;
+    max-width: 400px;
   }
-  .card-desTwo {
-    width: 100%;
-    padding: 20px 30px;
-    border: 1px solid grey;
-    background-color: white;
-    color: black;
-    h1,
-    p {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: -0.15px;
-      max-width: 400px;
-    }
+}
+.card-desTwo {
+  width: 100%;
+  padding: 20px 30px;
+  border: 1px solid grey;
+  background-color: white;
+  color: black;
+  h1,
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.15px;
+    max-width: 400px;
   }
-  .card-desThree {
-    width: 100%;
-    padding: 20px 30px;
-    border: 1px solid grey;
-    background-color: white;
-    color: black;
-    h1,
-    p {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: -0.15px;
-      max-width: 400px;
-    }
+}
+.card-desThree {
+  width: 100%;
+  padding: 20px 30px;
+  border: 1px solid grey;
+  background-color: white;
+  color: black;
+  h1,
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.15px;
+    max-width: 400px;
   }
-  .card-desFour {
-    width: 100%;
-    padding: 20px 30px;
-    border: 1px solid grey;
-    background-color: white;
-    color: black;
-    h1,
-    p {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: -0.15px;
-      max-width: 400px;
-      //transform: rotate(6.42deg);
-    }
+}
+.card-desFour {
+  width: 100%;
+  padding: 20px 30px;
+  border: 1px solid grey;
+  background-color: white;
+  color: black;
+  h1,
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.15px;
+    max-width: 400px;
+    //transform: rotate(6.42deg);
   }
-  .card-desFive {
-    width: 100%;
-    padding: 20px 30px;
-    border: 1px solid grey;
-    background-color: white;
-    color: black;
-    //transform: translate(0, -50%);
-    h1,
-    p {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: -0.15px;
-      max-width: 400px;
-      //transform: rotate(6.42deg);
-    }
+}
+.card-desFive {
+  width: 100%;
+  padding: 20px 30px;
+  border: 1px solid grey;
+  background-color: white;
+  color: black;
+  //transform: translate(0, -50%);
+  h1,
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.15px;
+    max-width: 400px;
+    //transform: rotate(6.42deg);
   }
 }
 
 @media screen and (max-width: 768px) {
   .service-contain {
-    display: flex;
-    flex-direction: column;
-    margin-top: 4em;
-    margin-left: 4em;
-
-    .service-cardOne,
-    .service-cardTwo,
-    .service-carThree,
-    .service-cardFour,
-    .service-cardFive {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  .btn-one,
-  .btn-two,
-  .btn-three,
-  .btn-four,
-  .btn-five {
-    width: 100%;
-  }
-}
+   width: 100%;
+}}*/
 
 //FOOTER
 footer {
