@@ -21,7 +21,7 @@ function Main() {
       <div className="service-contain">
         <div className="service-cardOne">
           <Slide>
-            <button className="btn-one">Product Design</button>
+            <button className="service-btn btn-one">Product Design</button>
           </Slide>
           <div className="card-desOne">
             <p>
@@ -33,7 +33,7 @@ function Main() {
 
         <div className="service-cardTwo">
           <Slide delay={0.3}>
-            <button className="btn-two">Technical Writing</button>
+            <button className="service-btn btn-two">Technical Writing</button>
           </Slide>
 
           <div className="card-desTwo">
@@ -47,7 +47,7 @@ function Main() {
 
         <div className="service-cardThree">
           <Slide delay={0.5}>
-            <button className="btn-three">Websites/Landing Pages</button>
+            <button className="service-btn btn-three">Websites/Landing Pages</button>
           </Slide>
 
           <div className="card-desThree">
@@ -60,7 +60,7 @@ function Main() {
 
         <div className="service-cardFour">
           <Slide delay={0.4}>
-            <button className="btn-four">E-commerce Stores</button>
+            <button className="service-btn btn-four">E-commerce Stores</button>
           </Slide>
 
           <div className="card-desFour">
@@ -73,7 +73,7 @@ function Main() {
 
         <div className="service-cardFive">
           <Slide delay={0.5}>
-            <button className="btn-five">Software consultancy</button>
+            <button className="service-btn btn-five">Software consultancy</button>
           </Slide>
 
           <div className="card-desFive">
@@ -87,42 +87,42 @@ function Main() {
       </div>
 
       <div className="cards">
-        <div className="card-desOne">
-          <h3>Product design</h3>
-          <p>
+        <div className="cards-style card-desOne">
+          <h3 className="heading">Product design</h3>
+          <p className="text">
             With a client-centric approach, our team of experts is ready to
             deliver pixel-perfect designs for your use cases.
           </p>
         </div>
 
-        <div className="card-desTwo">
-          <h3>Technical Writing</h3>
-            <p>
+        <div className="cards-style card-desTwo">
+          <h3 className="heading">Technical Writing</h3>
+            <p className="text">
               Work with our team of technical writing experts to attend to your
               technical writing needs; planning, content strategy, and
               improvement of existing technical documents.
             </p>
           </div>
 
-          <div className="card-desThree">
-            <h3>Websites/Landing Pages</h3>
-            <p>
+          <div className="cards-style card-desThree">
+            <h3 className="heading">Websites/Landing Pages</h3>
+            <p className="text">
               Upgrade your brand by working with our expert-led team to build
               your websites and landing pages.
             </p>
           </div>
 
-          <div className="card-desFour">
-            <h3>E-commerce Stores</h3>
-            <p>
+          <div className="cards-style card-desFour">
+            <h3 className="heading">E-commerce Stores</h3>
+            <p className="text">
               Upgrade your brand by working with our expert-led team to build
               your websites and landing pages.
             </p>
           </div>
 
-          <div className="card-desFive">
-            <h3>Software Consultancy</h3>
-            <p>
+          <div className="cards-style card-desFive">
+            <h3 className="heading">Software Consultancy</h3>
+            <p className="text">
               Engage our team of experts to discuss general software needs not
               limited to software evaluation and assessment, technical content
               auditing, and general software contracts.
