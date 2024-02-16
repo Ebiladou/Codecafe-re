@@ -17,6 +17,7 @@ function Main() {
         </p>
       </div>
 
+      <div className="flex-contain">
       <div className="service-contain">
         <div className="service-cardOne">
           <Slide>
@@ -127,6 +128,7 @@ function Main() {
               auditing, and general software contracts.
             </p>
           </div>
+      </div>
       </div>
     </div>
   );
