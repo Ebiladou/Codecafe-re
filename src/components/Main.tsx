@@ -1,7 +1,18 @@
 import Slide from "./Slide";
 import "../Main.scss";
+import { useState } from "react";
 
 function Main() {
+  const [showContent, setShowContent] = useState<number | null>(null);
+
+  const handleClick = (serviceIndex: number) => {
+    if (showContent === serviceIndex) {
+      setShowContent(null); 
+    } else {
+      setShowContent(serviceIndex); 
+    }
+  };
+
   return (
     <div className="main-container">
       <div className="text-area">
@@ -21,9 +32,9 @@ function Main() {
         <div className="service-contain">
           <div className="service-cardOne">
             <Slide>
-              <button className="service-btn btn-one">Product Design</button>
+              <button className="service-btn btn-one" onClick={() => handleClick(1)}>Product Design</button>
             </Slide>
-            <div className="card-des">
+            <div className= {`card-des ${showContent === 1 ? 'show' : ''}`}>
               <p>
                 With a client-centric approach, our team of experts is ready to
                 deliver pixel-perfect designs for your use cases.
