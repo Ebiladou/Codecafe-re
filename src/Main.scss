@@ -154,16 +154,68 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .cards {
+@media screen and (max-width: 870px) {
+  .main-container {
+    .text-area {
+
+      h1 {
+        font-size: 52px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: -2.9px;
+    padding-right: 2px;
+      }
+      
+      .desktop-text {
+    display: none;
+  }
+      .mobile-text {
+        display: inline-block;
+        font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: -.48px;
+    width: 500px;
+      }
+    }
+  }
+
+ .cards {
     display: none;
   }
 
-  .desktop-text {
-    display: none;
-  }
-
-  .mobile-text {
+  .flex-contain {
     display: block;
   }
+
+  .service-contain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5em;
+  
+    .card-des {
+       display: flex;
+        border: 0.536px solid #000;
+        color: black;
+    background: #fff;
+    width: 100%;
+
+      p {
+        display: flex;
+    font-size: 16px;
+    padding: 16px 0 32px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: -.48px;
+    max-width: max(280px,50%);
+    text-align: center;
+    margin: auto;
+      }
+    }
+  }
+
+  .service-btn {
+    width: 100%;
+  }
+
 }

@@ -23,7 +23,7 @@ function Main() {
             <Slide>
               <button className="service-btn btn-one">Product Design</button>
             </Slide>
-            <div className="card-desOne">
+            <div className="card-des">
               <p>
                 With a client-centric approach, our team of experts is ready to
                 deliver pixel-perfect designs for your use cases.
@@ -36,7 +36,7 @@ function Main() {
               <button className="service-btn btn-two">Technical Writing</button>
             </Slide>
 
-            <div className="card-desTwo">
+            <div className="card-des">
               <p>
                 Work with our team of technical writing experts to attend to
                 your technical writing needs; planning, content strategy, and
@@ -52,7 +52,7 @@ function Main() {
               </button>
             </Slide>
 
-            <div className="card-desThree">
+            <div className="card-des">
               <p>
                 Upgrade your brand by working with our expert-led team to build
                 your websites and landing pages.
@@ -67,7 +67,7 @@ function Main() {
               </button>
             </Slide>
 
-            <div className="card-desFour">
+            <div className="card-des">
               <p>
                 Upgrade your brand by working with our expert-led team to build
                 your websites and landing pages.
@@ -82,7 +82,7 @@ function Main() {
               </button>
             </Slide>
 
-            <div className="card-desFive">
+            <div className="card-des">
               <p>
                 Engage our team of experts to discuss general software needs not
                 limited to software evaluation and assessment, technical content
