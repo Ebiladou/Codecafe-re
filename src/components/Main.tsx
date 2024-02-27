@@ -1,6 +1,7 @@
 import Slide from "./Slide";
 import "../Main.scss";
 import { useState } from "react";
+//import useMediaQuery
 
 function Main() {
   const [showText, setShowText] = useState<boolean[]>([
@@ -10,12 +11,21 @@ function Main() {
     false,
     false,
   ]);
+
+  //define the media query: const isSmallScreen = useMediaQuery({ maxWidth: 768 });
+  //const [activeStack, setActiveStack] = useState<number | null>(null);
+  // const moveStackUp = (index: number) => {
+  //  setActiveStack(prevIndex => (prevIndex === index ? null : index));
+  //};
+
   const toggleText = (index: number) => {
     setShowText((prevState) => {
       const updatedShowText = prevState.map((_, idx) => idx === index);
       return updatedShowText;
     });
   };
+
+  //add different state for card stack: <button onClick={isSmallScreen ? toggleText : moveStackUp}>
 
   return (
     <div className="main-container">
