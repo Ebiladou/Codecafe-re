@@ -14,9 +14,6 @@ function Main() {
     setShowText((prevState) => {
       const updatedShowText = prevState.map((_, idx) => idx === index);
       return updatedShowText;
-      //const updatedShowText = [...showText];
-      //updatedShowText[index] = !updatedShowText[index];
-      //setShowText(updatedShowText);
     });
   };
 
@@ -141,7 +138,7 @@ function Main() {
 
         <div className="cards">
           {showText[0] && (
-            <div className="cards-style card-desOne" style={{ zIndex: "5" }}>
+            <div className="cards-style card-desOne" style={{ zIndex: "2" }}>
               <h3 className="heading">Product design</h3>
               <p className="text">
                 With a client-centric approach, our team of experts is ready to
@@ -151,7 +148,7 @@ function Main() {
           )}
 
           {showText[1] && (
-            <div className="cards-style card-desTwo" style={{ zIndex: "5" }}>
+            <div className="cards-style card-desTwo" style={{ zIndex: "2" }}>
               <h3 className="heading">Technical Writing</h3>
               <p className="text">
                 Work with our team of technical writing experts to attend to
@@ -162,7 +159,7 @@ function Main() {
           )}
 
           {showText[2] && (
-            <div className="cards-style card-desThree" style={{ zIndex: "5" }}>
+            <div className="cards-style card-desThree" style={{ zIndex: "2" }}>
               <h3 className="heading">Websites/Landing Pages</h3>
               <p className="text">
                 Upgrade your brand by working with our expert-led team to build
@@ -172,7 +169,7 @@ function Main() {
           )}
 
           {showText[3] && (
-            <div className="cards-style card-desFour" style={{ zIndex: "5" }}>
+            <div className="cards-style card-desFour" style={{ zIndex: "2" }}>
               <h3 className="heading">E-commerce Stores</h3>
               <p className="text">
                 Upgrade your brand by working with our expert-led team to build
@@ -182,7 +179,7 @@ function Main() {
           )}
 
           {showText[4] && (
-            <div className="cards-style card-desFive" style={{ zIndex: "5" }}>
+            <div className="cards-style card-desFive" style={{ zIndex: "2" }}>
               <h3 className="heading">Software Consultancy</h3>
               <p className="text">
                 Engage our team of experts to discuss general software needs not

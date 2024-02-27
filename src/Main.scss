@@ -115,42 +115,77 @@
   font-weight: 400;
   line-height: 28.8px;
   letter-spacing: -0.54px;
-  transform: rotate(4.1deg);
+  //transform: rotate(4.1deg);
 }
 
 .cards {
-  width: 480px;
-  height: 430px;
+  width: 490px;
+  height: 350px;
   position: relative;
 
   .card-desOne {
     background-color: #cb744e;
     transform: rotate(-3.42deg);
-    z-index: 5;
+    z-index: 1;
+
+    .heading {
+      transform: rotate(3.0deg);
+    }
+    .text {
+      transform: rotate(2.4deg);
+    }
   }
 
   .card-desTwo {
     background-color: #99ffc2;
     transform: rotate(-4.42deg);
-    z-index: 4;
+    z-index: 1;
+
+    .heading {
+      transform: rotate(3.8deg);
+    }
+    .text {
+      transform: rotate(3.1deg);
+    }
   }
 
   .card-desThree {
     background-color: #8a9ee4;
     transform: rotate(-5.42deg);
-    z-index: 3;
+    z-index: 1;
+
+    .heading {
+      transform: rotate(4.2deg);
+    }
+    .text {
+      transform: rotate(3.9deg);
+    }
   }
 
   .card-desFour {
     background-color: #8ad4e4;
     transform: rotate(-6.42deg);
-    z-index: 2;
+    z-index: 1;
+
+    .heading {
+      transform: rotate(4.9deg);
+    }
+    .text {
+      transform: rotate(4.4deg);
+    }
   }
 
   .card-desFive {
     background-color: #e38ae4;
     transform: rotate(-7.42deg);
     z-index: 1;
+
+    .heading {
+      transform: rotate(5.5deg);
+    }
+    .text {
+      transform: rotate(4.9deg);
+    }
   }
 }
 
