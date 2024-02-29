@@ -1,7 +1,6 @@
 import Slide from "./Slide";
 import "../Main.scss";
 import { useState } from "react";
-import useMediaQuery from "../Hooks/useMediaQuery";
 
 function Main() {
   const [cards, setCards] = useState([
@@ -45,6 +44,15 @@ function Main() {
   ]);
 
   const buttonColors = ["#cb744e", "#99ffc2", "#8a9ee4", "#8ad4e4", "#e38ae4"];
+  const cardRotate = [
+    "-3.42deg",
+    "-4.42deg",
+    "-5.42deg",
+    "-6.42deg",
+    "-7.42deg",
+  ];
+  const headingRotate = ["3.0deg", "3.8deg", "4.2deg", "4.9deg", "5.5deg"];
+  const textRotate = ["2.4deg", "3.1deg", "3.9deg", "4.4deg", "4.9deg"];
 
   const toggleActive = (index: number) => {
     setCards((prevCards) =>
@@ -55,7 +63,6 @@ function Main() {
     );
   };
 
-  const isSmallScreen = useMediaQuery("{ maxWidth: 870 }");
   const [activeStack, setActiveStack] = useState<number | null>(null);
   const moveStackUp = (index: number) => {
     setActiveStack((prevIndex) => (prevIndex === index ? null : index));
@@ -82,12 +89,12 @@ function Main() {
             <div
               className={`service-card${index + 1}`}
               key={index}
-              style={{ backgroundColor: service.color }}
+              // style={{ backgroundColor: service.color }}
             >
               <Slide delay={index * 0.2}>
                 <button
                   className={`service-btn btn-${index + 1}`}
-                  onClick={() => toggleActive(index)}
+                  onClick={() => { toggleActive(index), setActiveStack(index);}}
                   style={{
                     backgroundColor: buttonColors[index % buttonColors.length],
                   }}
@@ -102,8 +109,6 @@ function Main() {
               )}
             </div>
           ))}
-
-          {/*{() => (isSmallScreen ? toggleActive(index) : moveStackUp(index))}*/}
         </div>
 
         <div className="cards">
@@ -111,10 +116,24 @@ function Main() {
             <div
               key={index}
               className="cards-style"
-              style={{ backgroundColor: item.color }}
+              style={{
+                backgroundColor: item.color,
+                zIndex: activeStack === index ? cards.length + 1 : index + 1,
+                transform: `rotate(${cardRotate[index]})`,
+              }}
             >
-              <h2 className="heading">{item.title}</h2>
-              <p className="text">{item.description}</p>
+              <h2
+                className="heading"
+                style={{ transform: `rotate(${headingRotate[index]})` }}
+              >
+                {item.title}
+              </h2>
+              <p
+                className="text"
+                style={{ transform: `rotate(${textRotate[index]})` }}
+              >
+                {item.description}
+              </p>
             </div>
           ))}
         </div>

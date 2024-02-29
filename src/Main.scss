@@ -53,7 +53,7 @@
 .service-contain {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   margin-top: 5em;
 
   div {
@@ -61,26 +61,6 @@
       display: none;
     }
   }
-}
-
-.btn-one {
-  background-color: #cb744e;
-}
-
-.btn-two {
-  background-color: #99ffc2;
-}
-
-.btn-three {
-  background-color: #8a9ee4;
-}
-
-.btn-four {
-  background-color: #8ad4e4;
-}
-
-.btn-five {
-  background-color: #e38ae4;
 }
 
 .cards-style {
@@ -105,7 +85,7 @@
   letter-spacing: -0.72px;
   text-transform: capitalize;
   text-align: center;
-  transform: rotate(4.1deg);
+  //transform: rotate(4.1deg);
 }
 
 .text {
@@ -122,71 +102,6 @@
   width: 490px;
   height: 350px;
   position: relative;
-
-  .card-desOne {
-    background-color: #cb744e;
-    transform: rotate(-3.42deg);
-    z-index: 1;
-
-    .heading {
-      transform: rotate(3.0deg);
-    }
-    .text {
-      transform: rotate(2.4deg);
-    }
-  }
-
-  .card-desTwo {
-    background-color: #99ffc2;
-    transform: rotate(-4.42deg);
-    z-index: 1;
-
-    .heading {
-      transform: rotate(3.8deg);
-    }
-    .text {
-      transform: rotate(3.1deg);
-    }
-  }
-
-  .card-desThree {
-    background-color: #8a9ee4;
-    transform: rotate(-5.42deg);
-    z-index: 1;
-
-    .heading {
-      transform: rotate(4.2deg);
-    }
-    .text {
-      transform: rotate(3.9deg);
-    }
-  }
-
-  .card-desFour {
-    background-color: #8ad4e4;
-    transform: rotate(-6.42deg);
-    z-index: 1;
-
-    .heading {
-      transform: rotate(4.9deg);
-    }
-    .text {
-      transform: rotate(4.4deg);
-    }
-  }
-
-  .card-desFive {
-    background-color: #e38ae4;
-    transform: rotate(-7.42deg);
-    z-index: 1;
-
-    .heading {
-      transform: rotate(5.5deg);
-    }
-    .text {
-      transform: rotate(4.9deg);
-    }
-  }
 }
 
 @media screen and (max-width: 870px) {
@@ -272,6 +187,4 @@
   .service-btn {
     width: 100%;
   }
-
-
 }
