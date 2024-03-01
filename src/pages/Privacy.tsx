@@ -1,17 +1,19 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Transition from "../components/Transition";
 import Slide from "../components/Slide";
 
 function Privacy() {
   return (
     <>
       <Header />
+      <Transition>
       <section className="privacy-container">
-        <div className="privacy-heading">
-          <Slide>
-            <h1>privacy policy</h1>
-          </Slide>
+        <Slide>
+          <div className="privacy-heading">
+        <h1>privacy policy </h1> 
         </div>
+        </Slide>
         <div className="privacy-content">
           <h2>Privacy Policy for Codecafé</h2>
           <p>
@@ -90,6 +92,7 @@ function Privacy() {
           </p>
         </div>
       </section>
+      </Transition>
       <Footer /> 
       
     </>

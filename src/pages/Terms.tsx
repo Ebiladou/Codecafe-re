@@ -1,15 +1,19 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import Slide from "../components/Slide"
+import Transition from "../components/Transition"
 
 function Terms() {
   return (
     <>
     <Header/>
+    <Transition>
     <section className="terms-section">
+      <Slide>
         <div className="textual-head">
             <h1>terms and conditions</h1>
         </div>
-        
+        </Slide>
         <div className="terms-body">
             <h3>Welcome to Codecafé!</h3>
             <p>These terms and conditions outline the rules and regulations for the use of Codecafé's Website, located at https://thecodecafe.co/.</p>
@@ -31,6 +35,7 @@ function Terms() {
             </ul>
         </div>
     </section>
+    </Transition>
     <Footer/>
     </>
   )

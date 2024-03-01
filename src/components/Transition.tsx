@@ -1,23 +1,34 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
-function Transition() {
+type props = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+const Transition = ({ children, className }: props)  =>  {
+  const routeVariants = {
+    initial: {
+      y: "100vh",
+    },
+    final: {
+      y: "0vh",
+      transition: {
+        type: "spring",
+        mass: 0.4,
+      },
+    },
+  };
+  
   return (
     <>
       <motion.div
-        className="slide-in"
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 1 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-      />
-
-      <motion.div
-        className="slide-out"
-        initial={{ scaleY: 1 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 0 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-      />
+      variants={routeVariants}
+      initial="initial"
+      animate="final"
+      className={className}
+      >
+        {children}
+      </motion.div>
     </>
   );
 }
