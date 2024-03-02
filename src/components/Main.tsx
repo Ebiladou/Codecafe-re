@@ -64,10 +64,7 @@ function Main() {
   };
 
   const [activeStack, setActiveStack] = useState<number | null>(null);
-  const moveStackUp = (index: number) => {
-    setActiveStack((prevIndex) => (prevIndex === index ? null : index));
-  };
-
+  
   return (
     <div className="main-container">
       <div className="text-area">
