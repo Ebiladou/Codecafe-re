@@ -16,6 +16,7 @@
       font-weight: 600;
       margin-right: 0.3em;
       margin-bottom: 0.2em;
+      text-align: right;
     }
     .desktop-text {
       font-size: 18px;
@@ -44,10 +45,10 @@
   width: fit-content;
   border: none;
   cursor: pointer;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 100;
   letter-spacing: -0.68px;
-  padding: 16px 40px;
+  padding: 16px;
 }
 
 .service-contain {
@@ -123,7 +124,7 @@
         font-size: 16px;
         line-height: 1.8;
         letter-spacing: -0.48px;
-        width: 500px;
+        text-align: right;
       }
     }
   }
@@ -186,5 +187,7 @@
 
   .service-btn {
     width: 100%;
+    padding: 16px;
+    font-size: 30px;
   }
 }

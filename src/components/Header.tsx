@@ -21,5 +21,3 @@ function Header() {
 }
 
 export default Header
-
-//an entire component for css custom images to be imported here. 
