@@ -233,10 +233,10 @@ footer {
     color: white;
 
     h1 {
-      //max-width: 800px;
+      font-family: 'Geist Variable';
       font-size: 95px;
       font-weight: 600;
-      letter-spacing: -8px;
+      letter-spacing: -6px;
     }
   }
 
@@ -293,10 +293,10 @@ footer {
     background-color: black;
     color: white;
     h1 {
-      //max-width: 800px;
+      font-family: 'Geist Variable';
       font-size: 90px;
-      font-weight: 600;
-      letter-spacing: -8px;
+      font-weight: 500;
+      letter-spacing: -5px;
     }
   }
 
@@ -334,12 +334,12 @@ footer {
 
 @media screen and (max-width: 870px) {
   .privacy-heading {
-    padding: 0;
+    padding: 30px 20px 10px 10px;
     h1 {
       font-size: 58px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 64px;
-      letter-spacing: -5.5px;
+      letter-spacing: -5px;
     }
   }
 }
